@@ -3,4 +3,4 @@ export const GOOGLE_CLIENT_ID =
 
 export const RAZORPAY_KEY_ID = "rzp_test_Sium6iblRzKEAc"
 
-export const FREE_CREDITS = 20
+export const FREE_CREDITS = 3

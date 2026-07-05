@@ -26,27 +26,33 @@ export function LoginPage() {
 
   useEffect(() => {
     let mounted = true
+
     async function handleCredential(idToken: string) {
-      if (!mounted) return
       setSubmitting(true)
       try {
         const res = await authApi.googleLogin(idToken)
+        if (!mounted) return
         login(res.user, res.tokens)
         const name = res.user.username || res.user.email?.split("@")[0] || "there"
         toast.success(res.is_new_user ? `Welcome, ${name}! 🎉 You have 3 free credits.` : `Welcome back, ${name}! 👋`)
         navigate(from, { replace: true })
-      } catch {
+      } catch (err) {
+        console.error("Google login error:", err)
+        if (!mounted) return
         toast.error("Sign-in failed. Please try again.")
         setSubmitting(false)
       }
     }
+
     if (buttonRef.current) {
-      renderGoogleButton(buttonRef.current, handleCredential).catch(() => {
+      renderGoogleButton(buttonRef.current, handleCredential).catch((err) => {
+        console.error("GSI load error:", err)
         if (mounted) setGsiError(true)
       })
     }
+
     return () => { mounted = false }
-  }, [login, navigate, from])
+  }, [])
 
   return (
     <div className="relative flex min-h-screen flex-col bg-background overflow-hidden">
