@@ -6,15 +6,15 @@ import { Badge } from "@/components/ui/badge"
 const sections = [
   {
     title: "Acceptance of Terms",
-    content: `By accessing or using RoomAI, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance.`,
+    content: `By accessing or using RoomCraft, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance.`,
   },
   {
     title: "Use of Service",
-    content: `RoomAI provides AI-powered interior design generation services. You may use the service for personal and commercial purposes. You agree not to use the service for any unlawful purpose, to upload inappropriate or offensive content, to attempt to reverse-engineer our AI systems, or to resell access to the service without authorization.`,
+    content: `RoomCraft provides AI-powered interior design generation services. You may use the service for personal and commercial purposes. You agree not to use the service for any unlawful purpose, to upload inappropriate or offensive content, to attempt to reverse-engineer our AI systems, or to resell access to the service without authorization.`,
   },
   {
     title: "User Accounts",
-    content: `You are responsible for maintaining the confidentiality of your account credentials. You must be at least 18 years old to use RoomAI. You are responsible for all activities that occur under your account. Notify us immediately of any unauthorized use of your account.`,
+    content: `You are responsible for maintaining the confidentiality of your account credentials. You must be at least 18 years old to use RoomCraft. You are responsible for all activities that occur under your account. Notify us immediately of any unauthorized use of your account.`,
   },
   {
     title: "Credits & Subscriptions",
@@ -30,7 +30,7 @@ const sections = [
   },
   {
     title: "Limitation of Liability",
-    content: `RoomAI is provided "as is" without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of the service. Our total liability shall not exceed the amount you paid us in the 3 months preceding the claim. AI-generated designs are for visualization purposes only.`,
+    content: `RoomCraft is provided "as is" without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of the service. Our total liability shall not exceed the amount you paid us in the 3 months preceding the claim. AI-generated designs are for visualization purposes only.`,
   },
   {
     title: "Termination",
@@ -59,7 +59,7 @@ export function TermsPage() {
         <h1 className="text-4xl font-extrabold tracking-tight">Terms of Service</h1>
         <p className="mt-3 text-muted-foreground">Last updated: {new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}</p>
         <p className="mt-6 text-muted-foreground leading-relaxed">
-          Please read these Terms of Service carefully before using RoomAI. These terms govern your use of our AI-powered interior design platform.
+          Please read these Terms of Service carefully before using RoomCraft. These terms govern your use of our AI-powered interior design platform.
         </p>
 
         <div className="mt-12 space-y-10">
@@ -77,7 +77,7 @@ export function TermsPage() {
         <div className="mt-16 rounded-2xl border border-orange-500/20 bg-gradient-to-br from-orange-500/5 to-fuchsia-500/5 p-6">
           <p className="text-sm text-muted-foreground">
             Questions about these terms? Contact us at{" "}
-            <a href="mailto:legal@roomai.in" className="text-orange-500 hover:underline">legal@roomai.in</a>
+            <a href="mailto:legal@roomcraft.in" className="text-orange-500 hover:underline">legal@roomcraft.in</a>
           </p>
         </div>
       </main>

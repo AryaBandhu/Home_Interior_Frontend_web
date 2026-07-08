@@ -53,7 +53,7 @@ export async function startRazorpayCheckout({ planId, user }: CheckoutArgs) {
       key: order.key_id,
       amount: order.amount,
       currency: order.currency,
-      name: "RoomAI",
+      name: "RoomCraft",
       description: "Subscription Plan",
       order_id: order.order_id,
       prefill: {

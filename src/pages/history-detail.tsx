@@ -160,7 +160,7 @@ export function HistoryDetailPage() {
                     onClick={() =>
                       downloadImage(
                         img.image,
-                        `roomai-${generation.id}-${i + 1}.jpg`
+                        `roomcraft-${generation.id}-${i + 1}.jpg`
                       )
                     }
                   >

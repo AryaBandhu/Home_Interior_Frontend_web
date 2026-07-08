@@ -22,9 +22,9 @@ const features = [
 ]
 
 const testimonials = [
-  { name: "Ananya Sharma", role: "Homeowner, Bengaluru", quote: "I redesigned my entire living room before buying a single piece of furniture. RoomAI saved me lakhs in design fees." },
-  { name: "Rahul Mehta", role: "Interior Designer", quote: "I use RoomAI to give clients instant mockups. It's become an essential part of my workflow." },
-  { name: "Priya Nair", role: "Renter, Mumbai", quote: "As a renter I can't do big renovations, but RoomAI helped me visualize affordable changes. Love it!" },
+  { name: "Ananya Sharma", role: "Homeowner, Bengaluru", quote: "I redesigned my entire living room before buying a single piece of furniture. RoomCraft saved me lakhs in design fees." },
+  { name: "Rahul Mehta", role: "Interior Designer", quote: "I use RoomCraft to give clients instant mockups. It's become an essential part of my workflow." },
+  { name: "Priya Nair", role: "Renter, Mumbai", quote: "As a renter I can't do big renovations, but RoomCraft helped me visualize affordable changes. Love it!" },
 ]
 
 export function LandingPage() {
@@ -82,7 +82,7 @@ export function LandingPage() {
               <br />in <span className="gradient-text">seconds</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground max-w-2xl mx-auto">
-              Upload a photo of your space, choose your style, and watch RoomAI transform it into a stunning, photorealistic redesign. No designer required.
+              Upload a photo of your space, choose your style, and watch RoomCraft transform it into a stunning, photorealistic redesign. No designer required.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <Link to={startHref}>
@@ -241,7 +241,7 @@ export function LandingPage() {
             </div>
           </div>
           <div className="mt-10 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} RoomAI. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} RoomCraft. All rights reserved.</p>
             <div className="flex gap-4 text-sm text-muted-foreground">
               <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>
               <Link to="/terms" className="hover:text-foreground transition-colors">Terms</Link>

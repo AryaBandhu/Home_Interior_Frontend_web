@@ -30,11 +30,11 @@ const sections = [
   },
   {
     title: "Your Rights",
-    content: `You have the right to access, update, or delete your personal information at any time through your profile settings. You may also request deletion of your account and all associated data by contacting us at privacy@roomai.in.`,
+    content: `You have the right to access, update, or delete your personal information at any time through your profile settings. You may also request deletion of your account and all associated data by contacting us at privacy@roomcraft.in.`,
   },
   {
     title: "Changes to This Policy",
-    content: `We may update this Privacy Policy from time to time. We will notify you of any significant changes by email or through a notice on our platform. Your continued use of RoomAI after changes constitutes acceptance of the updated policy.`,
+    content: `We may update this Privacy Policy from time to time. We will notify you of any significant changes by email or through a notice on our platform. Your continued use of RoomCraft after changes constitutes acceptance of the updated policy.`,
   },
 ]
 
@@ -55,7 +55,7 @@ export function PrivacyPage() {
         <h1 className="text-4xl font-extrabold tracking-tight">Privacy Policy</h1>
         <p className="mt-3 text-muted-foreground">Last updated: {new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}</p>
         <p className="mt-6 text-muted-foreground leading-relaxed">
-          At RoomAI, we take your privacy seriously. This policy explains how we collect, use, and protect your information when you use our service.
+          At RoomCraft, we take your privacy seriously. This policy explains how we collect, use, and protect your information when you use our service.
         </p>
 
         <div className="mt-12 space-y-10">
@@ -73,7 +73,7 @@ export function PrivacyPage() {
         <div className="mt-16 rounded-2xl border border-orange-500/20 bg-gradient-to-br from-orange-500/5 to-fuchsia-500/5 p-6">
           <p className="text-sm text-muted-foreground">
             Questions about this policy? Contact us at{" "}
-            <a href="mailto:privacy@roomai.in" className="text-orange-500 hover:underline">privacy@roomai.in</a>
+            <a href="mailto:privacy@roomcraft.in" className="text-orange-500 hover:underline">privacy@roomcraft.in</a>
           </p>
         </div>
       </main>

@@ -51,7 +51,7 @@ export function AboutPage() {
             We believe everyone deserves a <span className="gradient-text">beautiful home</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            RoomAI was born from a simple idea: what if anyone could visualize their dream interior before spending a single rupee? We built the AI tools to make that possible.
+            RoomCraft was born from a simple idea: what if anyone could visualize their dream interior before spending a single rupee? We built the AI tools to make that possible.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ export function AboutPage() {
             <Badge variant="secondary" className="mb-3">Our Mission</Badge>
             <h2 className="text-3xl font-bold tracking-tight">Democratizing interior design with AI</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Hiring an interior designer costs lakhs. Buying furniture without visualizing it first is a gamble. We built RoomAI to eliminate both problems — giving everyone the power to see their space transformed before committing to any changes.
+              Hiring an interior designer costs lakhs. Buying furniture without visualizing it first is a gamble. We built RoomCraft to eliminate both problems — giving everyone the power to see their space transformed before committing to any changes.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Our AI understands room layouts, lighting, furniture placement, and design aesthetics. It doesn't just slap a filter on your photo — it genuinely reimagines your space.
