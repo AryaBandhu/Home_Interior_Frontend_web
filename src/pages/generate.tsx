@@ -206,7 +206,7 @@ export function GeneratePage() {
                         <Button
                           size="sm"
                           variant="secondary"
-                          onClick={() => downloadImage(img.image, `roomcraft-${result.id}.jpg`)}
+                          onClick={() => downloadImage(img.image, `spacia-${result.id}.jpg`)}
                           className="gap-1"
                         >
                           <Download className="size-3" /> Download

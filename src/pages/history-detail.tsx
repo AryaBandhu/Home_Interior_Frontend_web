@@ -160,7 +160,7 @@ export function HistoryDetailPage() {
                     onClick={() =>
                       downloadImage(
                         img.image,
-                        `roomcraft-${generation.id}-${i + 1}.jpg`
+                        `spacia-${generation.id}-${i + 1}.jpg`
                       )
                     }
                   >

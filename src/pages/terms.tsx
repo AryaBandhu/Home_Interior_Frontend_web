@@ -5,40 +5,96 @@ import { Badge } from "@/components/ui/badge"
 
 const sections = [
   {
-    title: "Acceptance of Terms",
-    content: `By accessing or using RoomCraft, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance.`,
+    title: "Definitions",
+    content: `"Service" means the Spacia application, website, AI tools, image generation features, subscriptions, credits, and related services.\n\n"User," "you," or "your" means any person or entity using Spacia.\n\n"User Content" means any image, prompt, text, style preference, design instruction, or other material you upload or submit to Spacia.\n\n"Generated Content" means any AI-generated room image, design variation, preview, or output created using Spacia.\n\n"Credits" means digital units used to access certain paid AI generation features, if applicable.`,
   },
   {
-    title: "Use of Service",
-    content: `RoomCraft provides AI-powered interior design generation services. You may use the service for personal and commercial purposes. You agree not to use the service for any unlawful purpose, to upload inappropriate or offensive content, to attempt to reverse-engineer our AI systems, or to resell access to the service without authorization.`,
+    title: "Description of Service",
+    content: `Spacia is an AI-powered room image generation and interior design application. Users can upload raw room images and provide prompts or design preferences. Spacia uses artificial intelligence, including third-party AI models such as Google Gemini, to transform, enhance, or redesign room images based on the selected interior style, theme, or instructions.\n\nSpacia is designed for inspiration, visualization, and creative interior design concepts. The Service does not provide professional architectural, engineering, construction, structural, electrical, legal, or safety advice.`,
   },
   {
-    title: "User Accounts",
-    content: `You are responsible for maintaining the confidentiality of your account credentials. You must be at least 18 years old to use RoomCraft. You are responsible for all activities that occur under your account. Notify us immediately of any unauthorized use of your account.`,
+    title: "Eligibility",
+    content: `You must be at least 16 years old to use Spacia. By using the Service, you confirm that you are legally capable of entering into these Terms.\n\nIf you use Spacia on behalf of a company, business, or organization, you represent that you have authority to bind that entity to these Terms.`,
   },
   {
-    title: "Credits & Subscriptions",
-    content: `New users receive 20 free credits upon registration. Each AI generation consumes 1 credit. Credits do not expire. Subscription plans provide unlimited generations for the duration of the subscription period. Subscriptions are non-refundable once activated. We reserve the right to modify pricing with 30 days notice.`,
+    title: "Account Registration",
+    content: `To access certain features, you may need to create an account or sign in using a third-party login method such as Google.\n\nYou agree to provide accurate, complete, and updated information. You are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account.\n\nYou must notify us immediately if you suspect unauthorized access to your account.`,
+  },
+  {
+    title: "User Content",
+    content: `You are responsible for all images, prompts, and other content you upload or submit to Spacia.\n\nBy uploading User Content, you confirm that:\n\n• You own the content or have the necessary rights and permissions to use it.\n• The content does not violate any law or third-party rights.\n• The content does not include illegal, harmful, abusive, discriminatory, or prohibited material.\n• You have obtained consent from any person whose personal information, image, property, or private space appears in the uploaded content, where required.\n• You understand that uploaded room images may reveal private details about your home, belongings, layout, or personal environment.`,
+  },
+  {
+    title: "License to Use User Content",
+    content: `You retain ownership of your User Content.\n\nBy submitting User Content to Spacia, you grant us a limited, non-exclusive, worldwide, royalty-free license to host, store, process, reproduce, modify, transmit, display, and use your User Content solely as necessary to:\n\n• Provide the Service.\n• Generate AI-based room designs.\n• Store your generated results in your account.\n• Improve, maintain, troubleshoot, and secure the Service.\n• Comply with legal obligations.\n\nWe will not use your private uploaded room images in public marketing or promotional materials without your permission.`,
+  },
+  {
+    title: "Generated Content",
+    content: `Subject to your compliance with these Terms, you may use the Generated Content created through Spacia for personal or commercial purposes, unless restricted by applicable law, third-party rights, subscription plan terms, or platform policies.\n\nYou understand and agree that:\n\n• AI-generated outputs may not be unique.\n• Similar or identical outputs may be generated for other users.\n• Generated Content may contain errors, distortions, inaccurate dimensions, unrealistic materials, or impractical design suggestions.\n• You are responsible for reviewing and verifying any Generated Content before using it.\n• Generated Content should not be relied upon for construction, renovation, electrical work, structural decisions, safety planning, or professional design execution without consulting qualified professionals.`,
+  },
+  {
+    title: "Prohibited Content",
+    content: `You agree not to upload, generate, request, or share content that:\n\n• Is illegal, fraudulent, misleading, or harmful.\n• Violates intellectual property, privacy, publicity, or other rights of any person or entity.\n• Contains personal documents, IDs, bank details, passwords, medical records, or other highly sensitive information.\n• Includes images of children without appropriate legal consent.\n• Promotes hate, harassment, discrimination, abuse, or violence.\n• Contains sexually explicit, exploitative, or non-consensual content.\n• Attempts to create unsafe, deceptive, or harmful outputs.\n• Involves malware, phishing, scams, or unauthorized access.\n• Attempts to bypass safety systems, restrictions, subscriptions, credits, or usage limits.\n• Misuses Spacia to copy, replicate, or infringe someone else's designs, brand, copyrighted work, or proprietary content.`,
+  },
+  {
+    title: "Prohibited Activities",
+    content: `You agree not to:\n\n• Use bots, scraping tools, automated scripts, or unauthorized methods to access the Service.\n• Reverse engineer, decompile, extract, copy, or attempt to discover the source code, model logic, or system prompts.\n• Interfere with or disrupt the Service, servers, networks, or security systems.\n• Use Spacia for unlawful, abusive, fraudulent, or harmful activities.\n• Resell, sublicense, or commercially exploit the Service without written permission.\n• Create multiple accounts to abuse free credits, trials, refunds, or promotional offers.\n• Misrepresent your identity or affiliation with Spacia.\n• Upload viruses, malware, or harmful code.\n• Attempt to overload, manipulate, or bypass our AI generation systems.\n\nViolation of this section may result in suspension, termination, loss of credits, refusal of refunds, and legal action.`,
+  },
+  {
+    title: "Subscriptions, Credits, and Payments",
+    content: `Spacia may offer free features, paid subscriptions, one-time purchases, credits, or premium plans.\n\nBy purchasing a subscription, plan, or credits, you agree to pay all applicable fees, taxes, and charges. Pricing and features may vary by country, platform, plan, promotional offer, or app store.\n\nCredits, if offered, may be consumed when you generate, regenerate, enhance, upscale, download, or otherwise use certain AI features. Credit usage may vary depending on the selected feature, image quality, model type, or generation mode.\n\nWe may change pricing, plans, features, or credit usage rules at any time. Any material changes will be communicated where required.`,
+  },
+  {
+    title: "Auto-Renewal and Cancellation",
+    content: `If you purchase a recurring subscription, it may automatically renew unless cancelled before the next billing date.\n\nIf your purchase was made through Apple App Store or Google Play Store, cancellation must be managed through your Apple or Google account settings.\n\nIf your purchase was made directly through Spacia, you may cancel through your account settings or by contacting support@spacia.app.\n\nCancellation stops future billing but does not automatically provide a refund for previous payments.`,
+  },
+  {
+    title: "Refund Policy",
+    content: `Refunds are governed by our Refund and Cancellation Policy. In general, refund requests may be considered only within three days of the first subscription purchase and only where one credit usage will be considered.\n\nPurchases made through Google Play Store may be subject to their respective refund rules and processes.`,
+  },
+  {
+    title: "Third-Party Services",
+    content: `Spacia may use third-party services, including but not limited to:\n\n• Google Gemini or other AI model providers.\n• Cloud hosting and storage providers.\n• Payment processors.\n• App stores.\n• Analytics and crash reporting providers.\n• Authentication providers such as Google.\n\nYour use of third-party services may be subject to their own terms and privacy policies. Spacia is not responsible for third-party service failures, policy changes, downtime, or data practices.`,
   },
   {
     title: "Intellectual Property",
-    content: `You retain ownership of the images you upload. The AI-generated redesigns are yours to use for personal and commercial purposes. RoomAI retains ownership of the platform, AI models, and underlying technology. You grant us a limited license to process your images solely for the purpose of generating redesigns.`,
+    content: `Spacia, including its name, logo, design, interface, software, features, graphics, text, branding, and underlying technology, is owned by Spacia or its licensors and is protected by intellectual property laws.\n\nYou may not copy, modify, distribute, sell, lease, reverse engineer, or create derivative works from any part of Spacia without our written permission.`,
   },
   {
-    title: "Content Guidelines",
-    content: `You may only upload images of real rooms and spaces. You must have the right to upload any images you submit. Do not upload images containing people's faces, private information, or content that violates any laws. We reserve the right to remove content that violates these guidelines.`,
+    title: "Feedback",
+    content: `If you provide suggestions, ideas, feature requests, or feedback, you grant Spacia the right to use that feedback without restriction or compensation to you.`,
+  },
+  {
+    title: "Service Availability",
+    content: `We aim to provide a reliable Service, but we do not guarantee that Spacia will always be available, uninterrupted, secure, or error-free.\n\nAI generation may fail, take longer than expected, produce inaccurate results, or be temporarily unavailable due to model limitations, server issues, payment issues, maintenance, third-party provider downtime, or high demand.`,
+  },
+  {
+    title: "Disclaimer of Warranties",
+    content: `SPACIA IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, AVAILABILITY, AND RELIABILITY.\n\nWE DO NOT GUARANTEE THAT GENERATED CONTENT WILL MEET YOUR EXPECTATIONS, MATCH EXACT DIMENSIONS, BE REALISTIC, BE CONSTRUCTION-READY, OR BE SUITABLE FOR PROFESSIONAL USE.`,
   },
   {
     title: "Limitation of Liability",
-    content: `RoomCraft is provided "as is" without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of the service. Our total liability shall not exceed the amount you paid us in the 3 months preceding the claim. AI-generated designs are for visualization purposes only.`,
+    content: `TO THE MAXIMUM EXTENT PERMITTED BY LAW, SPACIA, ITS OWNERS, EMPLOYEES, CONTRACTORS, PARTNERS, SERVICE PROVIDERS, AND AFFILIATES WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA, BUSINESS, GOODWILL, OR PROPERTY DAMAGE ARISING FROM YOUR USE OF THE SERVICE.\n\nSPACIA IS NOT RESPONSIBLE FOR DESIGN DECISIONS, RENOVATION COSTS, CONSTRUCTION ERRORS, THIRD-PARTY WORK, PROFESSIONAL RELIANCE, OR ANY ACTION TAKEN BASED ON AI-GENERATED OUTPUTS.`,
+  },
+  {
+    title: "Indemnification",
+    content: `You agree to indemnify and hold harmless Spacia, its owners, employees, contractors, affiliates, and service providers from any claims, damages, losses, liabilities, costs, or expenses arising from:\n\n• Your use of the Service.\n• Your User Content.\n• Your Generated Content.\n• Your violation of these Terms.\n• Your violation of any law or third-party rights.`,
   },
   {
     title: "Termination",
-    content: `We reserve the right to suspend or terminate your account for violations of these terms. You may delete your account at any time through your profile settings. Upon termination, your credits and generation history will be permanently deleted.`,
+    content: `We may suspend or terminate your account or access to Spacia at any time if we believe you violated these Terms, misused the Service, created legal risk, engaged in fraud, abused credits or refunds, or harmed Spacia, other users, or third parties.\n\nUpon termination, your right to use the Service will stop immediately. Certain sections of these Terms will continue to apply after termination, including ownership, disclaimers, limitation of liability, indemnification, and dispute provisions.`,
+  },
+  {
+    title: "Changes to These Terms",
+    content: `We may update these Terms from time to time. If we make material changes, we may notify you through the app, website, or email. Your continued use of Spacia after the updated Terms become effective means you accept the revised Terms.`,
   },
   {
     title: "Governing Law",
-    content: `These terms are governed by the laws of India. Any disputes shall be resolved in the courts of Mumbai, Maharashtra. If any provision of these terms is found to be unenforceable, the remaining provisions will continue in full force.`,
+    content: `These Terms will be governed by the laws of India. Any disputes will be subject to the courts located in Pratapgarh, Uttar Pradesh, India, unless applicable law requires a different forum.`,
+  },
+  {
+    title: "Contact Us",
+    content: `For questions about these Terms, contact us at:\n\nSpacia Support\nEmail: support@spacia.app\nCompany: Kalkinso Software (OPC) Private Limited\nAddress: 506 SHUKL PURE NANHA, SHUKL AINDHA, Aindha, Pratapgarh, Kunda, Uttar Pradesh, India, 230204`,
   },
 ]
 
@@ -56,10 +112,10 @@ export function TermsPage() {
         <Badge className="mb-4 bg-gradient-to-r from-orange-500/20 to-fuchsia-500/20 border-orange-500/30 text-orange-600 dark:text-orange-400">
           Legal
         </Badge>
-        <h1 className="text-4xl font-extrabold tracking-tight">Terms of Service</h1>
+        <h1 className="text-4xl font-extrabold tracking-tight">Terms and Conditions</h1>
         <p className="mt-3 text-muted-foreground">Last updated: {new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}</p>
         <p className="mt-6 text-muted-foreground leading-relaxed">
-          Please read these Terms of Service carefully before using RoomCraft. These terms govern your use of our AI-powered interior design platform.
+          Welcome to Spacia. These Terms and Conditions ("Terms") govern your access to and use of the Spacia mobile application, website, AI image generation features, subscriptions, credits, and related services. Spacia is operated by Kalkinso Software (OPC) Private Limited. By downloading, accessing, or using Spacia, you agree to be bound by these Terms. If you do not agree, please do not use the Service.
         </p>
 
         <div className="mt-12 space-y-10">
@@ -69,7 +125,7 @@ export function TermsPage() {
                 <span className="flex size-7 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-fuchsia-600 text-white text-xs font-bold">{i + 1}</span>
                 {s.title}
               </h2>
-              <p className="mt-3 text-muted-foreground leading-relaxed">{s.content}</p>
+              <p className="mt-3 text-muted-foreground leading-relaxed whitespace-pre-line">{s.content}</p>
             </div>
           ))}
         </div>
@@ -77,7 +133,7 @@ export function TermsPage() {
         <div className="mt-16 rounded-2xl border border-orange-500/20 bg-gradient-to-br from-orange-500/5 to-fuchsia-500/5 p-6">
           <p className="text-sm text-muted-foreground">
             Questions about these terms? Contact us at{" "}
-            <a href="mailto:legal@roomcraft.in" className="text-orange-500 hover:underline">legal@roomcraft.in</a>
+            <a href="mailto:support@spacia.app" className="text-orange-500 hover:underline">support@spacia.app</a>
           </p>
         </div>
       </main>

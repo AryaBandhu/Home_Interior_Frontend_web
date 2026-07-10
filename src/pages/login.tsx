@@ -74,7 +74,7 @@ export function LoginPage() {
               </span>
             </div>
             <h1 className="text-3xl font-extrabold tracking-tight">
-              Welcome to <span className="gradient-text">RoomCraft</span>
+              Welcome to <span className="gradient-text">Spacia</span>
             </h1>
             <p className="mt-2 text-muted-foreground">Sign in to start redesigning your space with AI.</p>
           </div>

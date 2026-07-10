@@ -9,7 +9,7 @@ export function Logo({ className }: { className?: string }) {
         <Sparkles className="size-5" />
       </span>
       <span className="font-bold text-xl tracking-tight gradient-text">
-        RoomCraft
+        Spacia
       </span>
     </Link>
   )
