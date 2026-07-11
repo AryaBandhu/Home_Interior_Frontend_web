@@ -190,28 +190,27 @@ export function GeneratePage() {
               ) : result && result.images.length > 0 ? (
                 <div className="space-y-4">
                   {result.images.map((img, i) => (
-                    <div key={img.id} className="group relative overflow-hidden rounded-xl border border-orange-500/20">
-                      <img
-                        src={mediaUrl(img.image)}
-                        alt={`Generated redesign ${i + 1}`}
-                        className="w-full object-cover rounded-xl"
-                        crossOrigin="anonymous"
-                      />
-                      <div className="absolute inset-0 flex items-end justify-between bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 transition-opacity group-hover:opacity-100">
-                        <div>
+                    <div key={img.id} className="space-y-3">
+                      <div className="group relative overflow-hidden rounded-xl border border-orange-500/20">
+                        <img
+                          src={mediaUrl(img.image)}
+                          alt={`Generated redesign ${i + 1}`}
+                          className="w-full object-cover rounded-xl"
+                          crossOrigin="anonymous"
+                        />
+                        <div className="absolute inset-0 flex items-end justify-between bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 transition-opacity group-hover:opacity-100">
                           <Badge className="bg-gradient-to-r from-orange-500 to-fuchsia-600 text-white border-0 text-xs">
                             {result.design_style.name} · {result.room_type.name}
                           </Badge>
                         </div>
-                        <Button
-                          size="sm"
-                          variant="secondary"
-                          onClick={() => downloadImage(img.image, `spacia-${result.id}.jpg`)}
-                          className="gap-1"
-                        >
-                          <Download className="size-3" /> Download
-                        </Button>
                       </div>
+                      <Button
+                        size="sm"
+                        className="w-full gap-2 bg-gradient-to-r from-orange-500 to-fuchsia-600 hover:from-orange-600 hover:to-fuchsia-700 text-white border-0"
+                        onClick={() => downloadImage(img.image, `spacia-${result.id}-${i + 1}.jpg`)}
+                      >
+                        <Download className="size-4" /> Download Image
+                      </Button>
                     </div>
                   ))}
                   <Button variant="outline" size="sm" className="w-full border-orange-500/30 hover:border-orange-500/60" onClick={() => navigate(`/history/${result.id}`)}>
