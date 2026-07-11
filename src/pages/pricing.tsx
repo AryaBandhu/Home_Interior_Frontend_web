@@ -5,7 +5,6 @@ import { subscriptionApi } from "@/lib/api"
 import type { Plan } from "@/lib/types"
 import { useAuth } from "@/context/auth-context"
 import { startCashfreeCheckout } from "@/lib/cashfree"
-import { subscriptionApi } from "@/lib/api"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import {
