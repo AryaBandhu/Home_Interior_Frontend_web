@@ -38,7 +38,7 @@ export function LandingPage() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
           <Logo />
           <nav className="hidden items-center gap-6 md:flex">
-            <Link to="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
+            <Link to="/plans" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
             <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</Link>
           </nav>
           <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ export function LandingPage() {
                   Start redesigning <ArrowRight className="size-4" />
                 </Button>
               </Link>
-              <Link to="/pricing">
+              <Link to="/plans">
                 <Button size="lg" variant="outline" className="px-8 text-base border-orange-500/30 hover:border-orange-500/60">
                   View pricing
                 </Button>

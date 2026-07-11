@@ -63,6 +63,8 @@ export interface Plan {
   name: string
   price: string
   duration_days: number
+  credits_granted: number
+  unlimited: boolean
   description: string
 }
 

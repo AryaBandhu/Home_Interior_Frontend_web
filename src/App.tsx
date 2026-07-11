@@ -13,6 +13,7 @@ import { GeneratePage } from "@/pages/generate"
 import { HistoryPage } from "@/pages/history"
 import { HistoryDetailPage } from "@/pages/history-detail"
 import { PricingPage } from "@/pages/pricing"
+import { PublicPricingPage } from "@/pages/public-pricing"
 import { ProfilePage } from "@/pages/profile"
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
+            <Route path="/plans" element={<PublicPricingPage />} />
 
             {/* Protected routes */}
             <Route element={<ProtectedRoute />}>

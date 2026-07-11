@@ -38,7 +38,7 @@ const sections = [
   },
   {
     title: "Data Retention",
-    content: `We retain your information only for as long as necessary to provide Spacia, comply with legal obligations, resolve disputes, enforce agreements, prevent fraud, and maintain security.\n\nUploaded images and generated outputs may be stored in your account until you delete them or request deletion, unless retention is required for legal, security, billing, backup, or dispute-resolution purposes.\n\nYou may request deletion of your account and associated personal data by contacting us at support@spacia.app.`,
+    content: `We retain your information only for as long as necessary to provide Spacia, comply with legal obligations, resolve disputes, enforce agreements, prevent fraud, and maintain security.\n\nUploaded images and generated outputs may be stored in your account until you delete them or request deletion, unless retention is required for legal, security, billing, backup, or dispute-resolution purposes.\n\nYou may request deletion of your account and associated personal data by contacting us at support@kalkinso.in.`,
   },
   {
     title: "Data Security",
@@ -46,7 +46,7 @@ const sections = [
   },
   {
     title: "Your Rights and Choices",
-    content: `Depending on your location and applicable law, you may have rights to:\n\n1. Access the personal information we hold about you.\n2. Correct inaccurate or incomplete information.\n3. Delete your account or personal data.\n4. Withdraw consent where processing is based on consent.\n5. Object to or restrict certain processing.\n6. Request a copy of your data.\n7. Opt out of marketing communications.\n8. Raise a privacy-related grievance.\n\nTo exercise these rights, contact us at support@spacia.app.`,
+    content: `Depending on your location and applicable law, you may have rights to:\n\n1. Access the personal information we hold about you.\n2. Correct inaccurate or incomplete information.\n3. Delete your account or personal data.\n4. Withdraw consent where processing is based on consent.\n5. Object to or restrict certain processing.\n6. Request a copy of your data.\n7. Opt out of marketing communications.\n8. Raise a privacy-related grievance.\n\nTo exercise these rights, contact us at support@kalkinso.in.`,
   },
   {
     title: "Children's Privacy",
@@ -66,7 +66,7 @@ const sections = [
   },
   {
     title: "Contact Us",
-    content: `If you have any questions, concerns, requests, or complaints about this Privacy Policy or our data practices, please contact us at:\n\nSpacia Support\nEmail: support@spacia.app\nCompany: Kalkinso Software (OPC) Private Limited\nAddress: 506 SHUKL PURE NANHA, SHUKL AINDHA, Aindha, Pratapgarh, Kunda, Uttar Pradesh, India, 230204`,
+    content: `If you have any questions, concerns, requests, or complaints about this Privacy Policy or our data practices, please contact us at:\n\nSpacia Support\nEmail: support@kalkinso.in\nCompany: Kalkinso Software (OPC) Private Limited\nAddress: 506 SHUKL PURE NANHA, SHUKL AINDHA, Aindha, Pratapgarh, Kunda, Uttar Pradesh, India, 230204`,
   },
 ]
 
@@ -102,7 +102,7 @@ export function PrivacyPage() {
         <div className="mt-16 rounded-2xl border border-orange-500/20 bg-gradient-to-br from-orange-500/5 to-fuchsia-500/5 p-6">
           <p className="text-sm text-muted-foreground">
             Questions about this policy? Contact us at{" "}
-            <a href="mailto:support@spacia.app" className="text-orange-500 hover:underline">support@spacia.app</a>
+            <a href="mailto:support@kalkinso.in" className="text-orange-500 hover:underline">support@kalkinso.in</a>
           </p>
         </div>
       </main>

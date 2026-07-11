@@ -116,7 +116,9 @@ export function PricingPage() {
                   <li className="flex items-start gap-2">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                     <span className="text-muted-foreground">
-                      Unlimited AI generations
+                      {plan.unlimited
+                        ? "Unlimited AI generations"
+                        : `${plan.credits_granted} AI generations`}
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

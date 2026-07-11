@@ -46,7 +46,7 @@ const sections = [
   },
   {
     title: "Auto-Renewal and Cancellation",
-    content: `If you purchase a recurring subscription, it may automatically renew unless cancelled before the next billing date.\n\nIf your purchase was made through Apple App Store or Google Play Store, cancellation must be managed through your Apple or Google account settings.\n\nIf your purchase was made directly through Spacia, you may cancel through your account settings or by contacting support@spacia.app.\n\nCancellation stops future billing but does not automatically provide a refund for previous payments.`,
+    content: `If you purchase a recurring subscription, it may automatically renew unless cancelled before the next billing date.\n\nIf your purchase was made through Apple App Store or Google Play Store, cancellation must be managed through your Apple or Google account settings.\n\nIf your purchase was made directly through Spacia, you may cancel through your account settings or by contacting support@kalkinso.in.\n\nCancellation stops future billing but does not automatically provide a refund for previous payments.`,
   },
   {
     title: "Refund Policy",
@@ -94,7 +94,7 @@ const sections = [
   },
   {
     title: "Contact Us",
-    content: `For questions about these Terms, contact us at:\n\nSpacia Support\nEmail: support@spacia.app\nCompany: Kalkinso Software (OPC) Private Limited\nAddress: 506 SHUKL PURE NANHA, SHUKL AINDHA, Aindha, Pratapgarh, Kunda, Uttar Pradesh, India, 230204`,
+    content: `For questions about these Terms, contact us at:\n\nSpacia Support\nEmail: support@kalkinso.in\nCompany: Kalkinso Software (OPC) Private Limited\nAddress: 506 SHUKL PURE NANHA, SHUKL AINDHA, Aindha, Pratapgarh, Kunda, Uttar Pradesh, India, 230204`,
   },
 ]
 
@@ -133,7 +133,7 @@ export function TermsPage() {
         <div className="mt-16 rounded-2xl border border-orange-500/20 bg-gradient-to-br from-orange-500/5 to-fuchsia-500/5 p-6">
           <p className="text-sm text-muted-foreground">
             Questions about these terms? Contact us at{" "}
-            <a href="mailto:support@spacia.app" className="text-orange-500 hover:underline">support@spacia.app</a>
+            <a href="mailto:support@kalkinso.in" className="text-orange-500 hover:underline">support@kalkinso.in</a>
           </p>
         </div>
       </main>
