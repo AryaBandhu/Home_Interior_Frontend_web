@@ -9,8 +9,8 @@ const contactDetails = [
   {
     icon: Mail,
     title: "Email",
-    value: "support@spacia.app",
-    href: "mailto:support@spacia.app",
+    value: "support@kalkinso.in",
+    href: "mailto:support@kalkinso.in",
   },
   {
     icon: Building2,
@@ -66,7 +66,7 @@ export function ContactPage() {
         <div className="mt-16 rounded-2xl border border-orange-500/20 bg-gradient-to-br from-orange-500/5 to-fuchsia-500/5 p-6">
           <p className="text-sm text-muted-foreground">
             For privacy-related queries, account deletion requests, or legal matters, email us at{" "}
-            <a href="mailto:support@spacia.app" className="text-orange-500 hover:underline">support@spacia.app</a>
+            <a href="mailto:support@kalkinso.in" className="text-orange-500 hover:underline">support@kalkinso.in</a>
           </p>
         </div>
       </main>
