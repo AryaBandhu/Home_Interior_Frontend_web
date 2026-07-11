@@ -141,32 +141,29 @@ export function HistoryDetailPage() {
       {generation.images.length > 0 && (
         <>
           <h2 className="text-lg font-semibold mb-3">Generated Designs</h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {generation.images.map((img, i) => (
-              <div
-                key={img.id}
-                className="group relative overflow-hidden rounded-xl border"
-              >
-                <img
-                  src={mediaUrl(img.image)}
-                  alt={`Generated design ${i + 1}`}
-                  className="aspect-square w-full object-cover"
-                  crossOrigin="anonymous"
-                />
-                <div className="absolute inset-0 flex items-end justify-end bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition-opacity group-hover:opacity-100">
-                  <Button
-                    size="sm"
-                    variant="secondary"
-                    onClick={() =>
-                      downloadImage(
-                        img.image,
-                        `spacia-${generation.id}-${i + 1}.jpg`
-                      )
-                    }
-                  >
-                    <Download className="mr-1 h-4 w-4" /> Download
-                  </Button>
+              <div key={img.id} className="space-y-3">
+                <div className="overflow-hidden rounded-xl border">
+                  <img
+                    src={mediaUrl(img.image)}
+                    alt={`Generated design ${i + 1}`}
+                    className="aspect-square w-full object-cover"
+                    crossOrigin="anonymous"
+                  />
                 </div>
+                <Button
+                  size="sm"
+                  className="w-full gap-2 bg-gradient-to-r from-orange-500 to-fuchsia-600 hover:from-orange-600 hover:to-fuchsia-700 text-white border-0"
+                  onClick={() =>
+                    downloadImage(
+                      img.image,
+                      `spacia-${generation.id}-${i + 1}.jpg`
+                    )
+                  }
+                >
+                  <Download className="h-4 w-4" /> Download Image
+                </Button>
               </div>
             ))}
           </div>
