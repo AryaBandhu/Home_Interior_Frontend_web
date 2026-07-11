@@ -169,7 +169,7 @@ export function PublicPricingPage() {
           )}
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
-            Payments are securely processed by Razorpay. All major cards, UPI, and netbanking supported.
+            Payments are securely processed by Cashfree. All major cards, UPI, and netbanking supported.
           </p>
         </div>
       </main>

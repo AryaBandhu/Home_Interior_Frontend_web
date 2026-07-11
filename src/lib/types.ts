@@ -68,11 +68,12 @@ export interface Plan {
   description: string
 }
 
-export interface RazorpayOrder {
+export interface CashfreeOrder {
   order_id: string
-  amount: number
-  currency: string
-  key_id: string
+  payment_session_id: string
+  order_amount: number
+  order_currency: string
+  env: string
 }
 
 export interface SubscriptionStatus {

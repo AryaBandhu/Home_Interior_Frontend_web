@@ -4,7 +4,7 @@ import type {
   Generation,
   GoogleLoginResponse,
   Plan,
-  RazorpayOrder,
+  CashfreeOrder,
   SubscriptionStatus,
   Tokens,
   User,
@@ -127,13 +127,11 @@ export const subscriptionApi = {
   plans: () => api.get<Plan[]>("/subscriptions/plans/").then((r) => r.data),
   createOrder: (planId: number) =>
     api
-      .post<RazorpayOrder>("/subscriptions/create-order/", { plan_id: planId })
+      .post<CashfreeOrder>("/subscriptions/create-order/", { plan_id: planId })
       .then((r) => r.data),
   verifyPayment: (payload: {
     plan_id: number
-    razorpay_order_id: string
-    razorpay_payment_id: string
-    razorpay_signature: string
+    order_id: string
   }) =>
     api
       .post<{ status: string }>("/subscriptions/verify-payment/", payload)

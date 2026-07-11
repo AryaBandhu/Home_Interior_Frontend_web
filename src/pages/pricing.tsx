@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom"
 import { subscriptionApi } from "@/lib/api"
 import type { Plan } from "@/lib/types"
 import { useAuth } from "@/context/auth-context"
-import { startRazorpayCheckout } from "@/lib/razorpay"
+import { startCashfreeCheckout } from "@/lib/cashfree"
+import { subscriptionApi } from "@/lib/api"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -48,7 +49,9 @@ export function PricingPage() {
     }
     setPurchasingId(plan.id)
     try {
-      await startRazorpayCheckout({ planId: plan.id, user })
+      const { orderId } = await startCashfreeCheckout({ planId: plan.id, user })
+      // Verify payment on backend
+      await subscriptionApi.verifyPayment({ plan_id: plan.id, order_id: orderId })
       await refreshUser()
       toast.success("Subscription activated successfully!")
     } catch (err) {
@@ -170,7 +173,7 @@ export function PricingPage() {
       )}
 
       <p className="mt-4 text-center text-sm text-muted-foreground">
-        Payments are securely processed by Razorpay. All major cards, UPI, and
+        Payments are securely processed by Cashfree. All major cards, UPI, and
         netbanking supported.
       </p>
     </div>

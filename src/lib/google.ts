@@ -6,25 +6,16 @@ interface GoogleCredentialResponse {
 
 declare global {
   interface Window {
-    // Razorpay and google declared in razorpay.ts
+    google?: {
+      accounts: {
+        id: {
+          initialize: (config: { client_id: string; callback: (response: GoogleCredentialResponse) => void }) => void
+          renderButton: (parent: HTMLElement, options: Record<string, unknown>) => void
+          prompt: () => void
+        }
+      }
+    }
   }
-}
-
-export interface RazorpayOptions {
-  key: string
-  amount: number
-  currency: string
-  order_id: string
-  name: string
-  description: string
-  theme?: { color?: string }
-  handler: (response: {
-    razorpay_order_id: string
-    razorpay_payment_id: string
-    razorpay_signature: string
-  }) => void
-  modal?: { ondismiss?: () => void }
-  prefill?: { name?: string; email?: string }
 }
 
 function waitForGoogle(): Promise<NonNullable<Window["google"]>> {
