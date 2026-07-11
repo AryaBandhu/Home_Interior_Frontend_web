@@ -54,8 +54,8 @@ export function DashboardPage() {
               {user.is_subscribed ? <Crown className="size-6" /> : <Sparkles className="size-6" />}
             </span>
             <div>
-              <p className="text-sm text-muted-foreground">{user.is_subscribed ? "Generations" : "Credits remaining"}</p>
-              <p className="text-2xl font-extrabold gradient-text">{user.is_subscribed ? "∞" : user.credits}</p>
+              <p className="text-sm text-muted-foreground">{user.credits === -1 ? "Generations" : "Credits remaining"}</p>
+              <p className="text-2xl font-extrabold gradient-text">{user.credits === -1 ? "∞" : user.credits}</p>
             </div>
           </CardContent>
         </Card>
@@ -68,9 +68,9 @@ export function DashboardPage() {
             <div>
               <p className="text-sm text-muted-foreground">Subscription</p>
               <div className="flex items-center gap-2 mt-0.5">
-                <p className="text-2xl font-extrabold">{user.is_subscribed ? "Pro" : "Free"}</p>
+                <p className="text-2xl font-extrabold">{user.is_subscribed ? "Active" : "Free"}</p>
                 {user.is_subscribed ? (
-                  <Badge className="bg-gradient-to-r from-orange-500 to-fuchsia-600 text-white border-0 text-xs">Active</Badge>
+                  <Badge className="bg-gradient-to-r from-orange-500 to-fuchsia-600 text-white border-0 text-xs">Subscribed</Badge>
                 ) : (
                   <Link to="/pricing">
                     <Badge variant="outline" className="cursor-pointer border-orange-500/40 text-orange-500 text-xs hover:bg-orange-500/10">Upgrade</Badge>
