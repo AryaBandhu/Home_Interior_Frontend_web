@@ -8,6 +8,7 @@ import { LoginPage } from "@/pages/login"
 import { AboutPage } from "@/pages/about"
 import { PrivacyPage } from "@/pages/privacy"
 import { TermsPage } from "@/pages/terms"
+import { ContactPage } from "@/pages/contact"
 import { DashboardPage } from "@/pages/dashboard"
 import { GeneratePage } from "@/pages/generate"
 import { HistoryPage } from "@/pages/history"
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/plans" element={<PublicPricingPage />} />
 
             {/* Protected routes */}
