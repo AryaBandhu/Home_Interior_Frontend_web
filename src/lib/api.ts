@@ -3,6 +3,7 @@ import type {
   GenerationOptions,
   Generation,
   GoogleLoginResponse,
+  EmailLoginResponse,
   Plan,
   CashfreeOrder,
   SubscriptionStatus,
@@ -101,6 +102,18 @@ export function mediaUrl(url: string): string {
 export const authApi = {
   googleLogin: (token: string) =>
     api.post<GoogleLoginResponse>("/auth/google/", { token }).then((r) => r.data),
+  emailLogin: (email: string, password: string) =>
+    api.post<EmailLoginResponse>("/auth/login/", { email, password }).then((r) => r.data),
+  signup: (payload: { first_name: string; last_name: string; email: string; password: string; confirm_password: string }) =>
+    api.post<{ detail: string }>("/auth/signup/", payload).then((r) => r.data),
+  verifyEmail: (email: string, otp: string) =>
+    api.post<EmailLoginResponse>("/auth/verify-email/", { email, otp }).then((r) => r.data),
+  forgotPassword: (email: string) =>
+    api.post<{ detail: string }>("/auth/forgot-password/", { email }).then((r) => r.data),
+  verifyOtp: (email: string, otp: string) =>
+    api.post<{ detail: string }>("/auth/verify-otp/", { email, otp }).then((r) => r.data),
+  resetPassword: (email: string, otp: string, password: string, confirm_password: string) =>
+    api.post<{ detail: string }>("/auth/reset-password/", { email, otp, password, confirm_password }).then((r) => r.data),
   me: () => api.get<User>("/auth/me/").then((r) => r.data),
   updateProfile: (payload: Partial<Pick<User, "first_name" | "last_name" | "username">>) =>
     api.patch<User>("/auth/me/", payload).then((r) => r.data),

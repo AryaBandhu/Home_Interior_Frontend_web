@@ -21,6 +21,11 @@ export interface GoogleLoginResponse {
   is_new_user: boolean
 }
 
+export interface EmailLoginResponse {
+  user: User
+  tokens: Tokens
+}
+
 export interface Option {
   id: number
   name: string

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/context/theme-context"
 import { ProtectedRoute } from "@/components/protected-route"
 import { LandingPage } from "@/pages/landing"
 import { LoginPage } from "@/pages/login"
+import { SignupPage } from "@/pages/signup"
 import { AboutPage } from "@/pages/about"
 import { PrivacyPage } from "@/pages/privacy"
 import { TermsPage } from "@/pages/terms"
@@ -26,6 +27,7 @@ export default function App() {
             {/* Public routes */}
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
