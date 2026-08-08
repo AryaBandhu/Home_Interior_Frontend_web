@@ -17,6 +17,7 @@ import { HistoryDetailPage } from "@/pages/history-detail"
 import { PricingPage } from "@/pages/pricing"
 import { PublicPricingPage } from "@/pages/public-pricing"
 import { ProfilePage } from "@/pages/profile"
+import { Chatbot } from "@/components/chatbot"
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Toaster richColors position="top-center" />
+          <Chatbot />
         </AuthProvider>
       </BrowserRouter>
     </ThemeProvider>
